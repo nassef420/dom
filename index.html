@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/c131a57132.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="cart">
+      <h2>Shopping Cart</h2>
+      <ul id="item-list">
+        <li class="item">
+          <img src="./pizza.jpg" alt="sushi" />
+          <span class="item-name">Pizza</span>
+          <span class="item-quantity"
+            >Quantity: <span class="quantity">1</span></span
+          >
+          <button class="increase-quantity btn btn-info">+</button>
+          <button class="decrease-quantity btn btn-info">-</button>
+          <button class="delete-item btn btn-danger">Delete</button>
+          <button onclick="Toggle1()" id="btnh1" class="btn">
+            <i class="fas fa-heart"></i>
+          </button>
+        </li>
+        <li class="item">
+          <img src="./burger.jpg" alt="sushi" />
+          <span class="item-name">Burger</span>
+          <span class="item-quantity"
+            >Quantity: <span class="quantity">1</span></span
+          >
+          <button class="increase-quantity btn btn-info">+</button>
+          <button class="decrease-quantity btn btn-info">-</button>
+          <button class="delete-item btn btn-danger">Delete</button>
+          <button onclick="Toggle2()" id="btnh2" class="btn">
+            <i class="fas fa-heart"></i>
+          </button>
+        </li>
+        <li class="item">
+          <img src="./sushi.jpg" alt="sushi" />
+          <span class="item-name">Sushi</span>
+          <span class="item-quantity"
+            >Quantity: <span class="quantity">1</span></span
+          >
+          <button class="increase-quantity btn btn-info">+</button>
+          <button class="decrease-quantity btn btn-info">-</button>
+          <button class="delete-item btn btn-danger">Delete</button>
+          <button onclick="Toggle3()" id="btnh3" class="btn">
+            <i class="fas fa-heart"></i>
+          </button>
+        </li>
+        <li class="item">
+          <img src="./pasta.jpg" alt="sushi" />
+          <span class="item-name">Pasta</span>
+          <span class="item-quantity"
+            >Quantity: <span class="quantity">1</span></span
+          >
+          <button class="increase-quantity btn btn-info">+</button>
+          <button class="decrease-quantity btn btn-info">-</button>
+          <button class="delete-item btn btn-danger">Delete</button>
+          <button onclick="Toggle4()" id="btnh4" class="btn">
+            <i class="fas fa-heart"></i>
+          </button>
+        </li>
+        <li class="item">
+          <img src="./kafteji.jpg" alt="sushi" />
+          <span class="item-name">Kafteji</span>
+          <span class="item-quantity"
+            >Quantity: <span class="quantity">1</span></span
+          >
+          <button class="increase-quantity btn btn-info">+</button>
+          <button class="decrease-quantity btn btn-info">-</button>
+          <button class="delete-item btn btn-danger">Delete</button>
+          <button onclick="Toggle5()" id="btnh5" class="btn">
+            <i class="fas fa-heart"></i>
+          </button>
+        </li>
+      </ul>
+      <div id="total-price">Total Price: $0</div>
+    </div>
+    <script src="script.js"></script>
+
+    <script>
+      // First Like Button
+      var btnvar1 = document.getElementById("btnh1");
+
+      function Toggle1() {
+        if (btnvar1.style.color == "red") {
+          btnvar1.style.color = "grey";
+        } else {
+          btnvar1.style.color = "red";
+        }
+      }
+
+      var btnvar2 = document.getElementById("btnh2");
+
+      function Toggle2() {
+        if (btnvar2.style.color == "red") {
+          btnvar2.style.color = "grey";
+        } else {
+          btnvar2.style.color = "red";
+        }
+      }
+
+      var btnvar3 = document.getElementById("btnh3");
+
+      function Toggle3() {
+        if (btnvar3.style.color == "red") {
+          btnvar3.style.color = "grey";
+        } else {
+          btnvar3.style.color = "red";
+        }
+      }
+
+      var btnvar4 = document.getElementById("btnh4");
+
+      function Toggle4() {
+        if (btnvar4.style.color == "red") {
+          btnvar4.style.color = "grey";
+        } else {
+          btnvar4.style.color = "red";
+        }
+      }
+      var btnvar5 = document.getElementById("btnh5");
+
+      function Toggle5() {
+        if (btnvar5.style.color == "red") {
+          btnvar5.style.color = "grey";
+        } else {
+          btnvar5.style.color = "red";
+        }
+      }
+    </script>
+  </body>
+</html>
